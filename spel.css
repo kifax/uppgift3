@@ -1,0 +1,15 @@
+.cell{
+    width: 100vh;
+    height: 30px;
+    border: 0.1px solid;
+}
+#tre{
+
+    text-align:center 
+}
+#cellforsättning{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 20px;
+    margin: auto;
+}
