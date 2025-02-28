@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kortlek</title>
+    <title>projekt3</title>
 </head>
+<link rel="stylesheet" href="desing.css">
 <body>
-    <div id="flex-xontainer">
-        <img src="dice1.png" class="dice" alt="">
-       
-        
-        <button onclick="rool()">kasta tärningar!</button>
+    <div id="flex-container">
+        <img src="1.png" class="kort" alt="">
+        <img src="1.png" class="kort" alt="">
+        <img src="1.png" class="kort" alt="">
+        <img src="1.png" class="kort" alt="">
+        <img src="1.png" class="kort" alt="">
+        <button onclick="rool()">restart!</button>
     </div>
 
     <script>
         function rool(){
 
-            dice = document.getElementsByClassName("dice")
+            kort = document.getElementsByClassName("kort")
            for(let i = 0; i < 5; i++) {            
             number = Math.floor(Math.random()*6) + 1
-            dice[i].src = "dice" + number + ".png"
+            kort[i].src =  number + ".png"
            }
         }
     </script>
-    <!---->
+
+    
+
 </body>
 </html>
