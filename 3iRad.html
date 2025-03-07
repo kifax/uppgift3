@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3iRad.css">
+</head>
+<body>
+    <div id="ciyartacontainer" >
+        <h2>3!rad</h2>
+        <div id="unuggacontainer">
+            <span id="b" onclick="grow()">
+                🎈
+            </span>
+        
+            <script>
+                size = 20
+                function grow(){
+                    document.getElementById("b").style.fontSize = size + "px"
+                    size +=10
+        
+                    if(size == 130){
+                    document.getElementById("b").innerHTML =  "💥 "
+        
+                    }
+                    if(size ==260){
+                        size =50
+                        document.getElementById("b").innerHTML = "🎈"
+                        document.getElementById("b").style.fontSize = size + "px"
+                    }
+                }
+            </script>
+            <div unuggaindex="1" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(0);">
+            </div>
+            <div unuggaindex="2" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(1);">
+            </div>
+            <div unuggaindex="3" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(2);">
+            </div>
+            <div unuggaindex="4" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(3);">
+            </div>
+            <div unuggaindex="5" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(4);">
+            </div>
+            <div unuggaindex="6" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(5);">
+            </div>
+            <div unuggaindex="7" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(6);" >
+            </div>
+            <div unuggaindex="8" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(7);">
+            </div>
+            <div unuggaindex="9" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(8);">
+            </div>
+            <div unuggaindex="9" class="unugga">
+                <img src="white.png" alt="" onclick="choosed(9);">
+            </div>
+            
+
+        </div>
+        <h3 id="text"></h3>
+        <button id="restartbutton" onclick="startGame()">restart</button>
+    </div>
+
+    <script>
+        function choosed(nr){
+            alert(nr);
+        }
+
+        function startGame(){
+
+            let images = document.getElementsByTagName("img");
+            for(let i = 0; i < images.length; i++){
+                images[i].src = "white.png"
+            }
+
+            let randomPlace = Math.floor(Math.random()*9) 
+            let randomNr = Math.floor(Math.random()*6) +1
+            images[randomPlace].src = randomNr + ".png"
+        }
+    </script>
+    
+    
+</body>
+</html>

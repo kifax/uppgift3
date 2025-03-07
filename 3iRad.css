@@ -1,0 +1,29 @@
+.unugga{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+    font-size: 50px;
+    cursor: pointer;
+    color: rgb(199, 64, 199);
+}
+
+#ciyartacontainer{
+    text-align: center;
+    color:rgba(153, 34, 153, 0.808); ;
+}
+
+#unuggacontainer{
+    display: grid;
+    grid-template-columns:repeat(3, auto);
+    width: 225px;
+    margin: auto;
+}
+
+.unugga img{
+    width: 100%;
+    height: 100%;
+}
+#restartbutton{
+    color: rgb(238, 78, 30);
+
+}
