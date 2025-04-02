@@ -1,0 +1,19 @@
+
+
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.has-background-dark {
+    background-color: #121212 !important;
+    color: white !important;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.button.is-dark {
+    margin-bottom: 20px;
+}
